@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis - Smartwatch for Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="images/heart_rate.png" alt="Heart Rate" class="title-image">
+            <h1>Smartwatch for Health Monitoring</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="data.html">Data Analysis</a></li>
+                <li><a href="upload.html">File Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="data-analysis">
+            <h2>Data Analysis</h2>
+            <form id="prediction-form">
+                <label for="hrv">HRV:</label>
+                <input type="number" id="hrv" name="hrv" required><br><br>
+                <label for="spo2">SpO2:</label>
+                <input type="number" id="spo2" name="spo2" required><br><br>
+                <label for="accelerometer">Accelerometer:</label>
+                <input type="number" id="accelerometer" name="accelerometer" required><br><br>
+                <label for="gyroscope">Gyroscope:</label>
+                <input type="number" id="gyroscope" name="gyroscope" required><br><br>
+                <button type="submit">Predict</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Amanda Aninagyei</p>
+    </footer>
+</body>
+</html>

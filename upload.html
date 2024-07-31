@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload - Smartwatch for Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="upload.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="images/heart_rate.png" alt="Heart Rate" class="title-image">
+            <h1>Smartwatch for Health Monitoring</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="data.html">Data Analysis</a></li>
+                <li><a href="upload.html">File Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="file-upload">
+            <h2>Upload Data File</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="file" name="file" accept=".xlsx, .xls, .csv" required><br><br>
+                <button type="submit">Upload</button>
+            </form>
+            <div id="upload-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Amanda Aninagyei</p>
+    </footer>
+</body>
+</html>
